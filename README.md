@@ -13,4 +13,43 @@ In VSCode, I use (with fallbacks for multiple machines):
 "editor.fontFamily": "Fira Code 2 iScript, FiraCode-Retina, Fira Code Retina, Fira Code, Consolas, 'Courier New', monospace",
 ```
 
+I then apply the following in `settings.json` as well to enable italics:
+
+```json
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "scope": [
+                "comment",
+                "constant", //String, Number, Boolean…, this, super
+                "keyword", //import, export, return…
+                "markup.italic",
+                "meta.selector",
+                "storage.modifier", //static keyword
+                "storage.type",
+                "storage.type.class.js", //class keyword
+                "variable.language",
+            ],
+            "settings": {
+                "fontStyle": "italic",
+            }
+        },
+        {
+            "scope": [
+                //following will be excluded from italics (VSCode has some defaults for italics which aren't amazingT)
+                "invalid",
+                "keyword.operator",
+                "constant.numeric.css",
+                "keyword.other.unit.px.css",
+                "constant.numeric.decimal.js",
+                "constant.numeric.json"
+            ],
+            "settings": {
+                "fontStyle": ""
+            }
+        }
+    ]
+}
+```
+
 ## Screenshots
