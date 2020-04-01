@@ -15,7 +15,7 @@ In VSCode, I use (with fallbacks for multiple machines):
 
 I then apply the following in `settings.json` as well to enable italics:
 
-```json
+```js
 "editor.tokenColorCustomizations": {
     "textMateRules": [
         {
