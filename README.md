@@ -5,7 +5,9 @@ I was originally using https://github.com/kencrocken/FiraCodeiScript, however it
 
 Originally this was Fira Code v2 + iScript, however Fira Code has now had multiple releases since. At some point, I may apply a _minor_ rename to the font to remove the Two/2 so the naming is a bit more... relevant!
 
-Really simple to install - download the three `.ttf` files and install them on your system. 
+
+## Installation
+This is _really_ simple to install - download the three `.ttf` files and install them on your system. 
 
 Then, launch whatever code editor you use and apply `Fira Code Two iScript` as your font family.
 
@@ -55,3 +57,4 @@ I then apply the following in `settings.json` as well to enable italics:
 ```
 
 ## Screenshots
+Coming soon...
